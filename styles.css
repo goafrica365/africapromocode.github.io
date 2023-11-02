@@ -1,0 +1,62 @@
+/* 共通樣式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.button {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+}
+
+.button:active {
+    transform: scale(0.95) translateX(-50%);
+}
+
+/* Web版配置 */
+@media (min-width: 1025px) {
+    body {
+        background-image: url('backupgourd2.png');
+    }
+    #button01 {
+        background-color: #333;
+        top: calc(70% - 65px);
+    }
+    #button02 {
+        background-color: #ff4500;
+        top: calc(78% + 5px);
+    }
+}
+
+/* 手機版配置 */
+@media (max-width: 1024px) {
+    body {
+        background-image: url('backupgourd3.png');
+    }
+    #button01 {
+        background-color: #333;
+        top: calc(78% - 65px);
+    }
+    #button02 {
+        background-color: #ff4500;
+        top: calc(88% + 5px);
+    }
+}
