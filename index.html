@@ -34,6 +34,8 @@
             cursor: pointer;
             transition: transform 0.1s ease, box-shadow 0.1s ease;
             position: absolute; /* 使用絕對定位 */
+            .button {
+            z-index: 10; /* 確保按鈕在最前面 */
         }
 
         .button:hover {
@@ -74,6 +76,7 @@
                 background-size: contain; /* 設定為contain確保背景圖像全部顯示 */
                 background-position: center center; /* 置中背景圖 */
                 background-repeat: no-repeat;
+                
             }
             .button1 {
                 background-image: url('africa365Joinusapp.png');
