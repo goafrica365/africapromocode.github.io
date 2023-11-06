@@ -69,29 +69,20 @@
         }
 
        /* 手機版樣式 */
-       @media screen and (max-width: 767px) {
-            .background {
-                background-image: url('africa36514x390.png');
-                background-size: contain; /* 設定為contain確保背景圖像全部顯示 */
-                background-position: center center; /* 置中背景圖 */
-                background-repeat: no-repeat;
-                
-            }
-            .button1 {
-                background-image: url('africa365Joinusapp.png');
-                width: 220px;
-                height: 60px;
-                left: 90px;
-                top: 150px;
-            }
-
-            .button2 {
-                background-image: url('Africa365app.png');
-                width: 220px;
-                height: 60px;
-                left: 90px;
-                top: 230px;
-            }
+      @media screen and (max-width: 767px) {
+    .background {
+        background-image: url('africa36514x390.png'); /* 確保此圖片路徑正確 */
+        background-size: contain; /* 如果圖片尺寸適合，保持此設置；否則可能需要調整 */
+        background-position: top center; /* 從頂部開始顯示，並保持水平居中 */
+        background-repeat: no-repeat;
+    }
+    .button1, .button2 {
+        /* 這裡取消掉絕對定位，改用flex布局居中按鈕 */
+        position: relative;
+        width: 220px;
+        height: 60px;
+        margin: 10px auto; /* 自動邊距可使元素水平居中 */
+    }
 
             }
         
